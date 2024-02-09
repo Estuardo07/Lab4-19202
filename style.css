@@ -1,6 +1,6 @@
 .background {
     background-color: #0A1931;
-    height: 100vh;
+    height: 97vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,8 +15,30 @@
     overflow: hidden;
 }
 
+.moon::before {
+    content: '';
+    width: 100px;
+    height: 100px;
+    background-color: #aaaaaac4;
+    border-radius: 50%;
+    position: fixed;
+    top: 45%;
+    left: 42%;
+}
+
+.moon::after {
+    content: '';
+    width: 50px;
+    height: 50px;
+    background-color: #CCCCCC;
+    border-radius: 50%;
+    position: fixed;
+    top: 44%;
+    left: 50%;
+}
+
 .crater {
-    position: absolute;
+    position: fixed;
     background-color: #999999;
     border-radius: 50%;
 }
@@ -24,68 +46,68 @@
 .crater1 {
     width: 15px;
     height: 15px;
-    top: 20%;
-    left: 30%;
+    top: 50%;
+    left: 50%;
 }
 
 .crater2 {
     width: 12px;
     height: 12px;
-    top: 50%;
-    left: 60%;
+    top: 59%;
+    left: 49%;
 }
 
 .crater3 {
     width: 10px;
     height: 10px;
-    top: 70%;
-    left: 20%;
+    top: 42%;
+    left: 45%;
 }
 
 .crater4 {
     width: 18px;
     height: 18px;
-    top: 40%;
-    left: 80%;
+    top: 43%;
+    left: 56%;
 }
 
 .crater5 {
     width: 16px;
     height: 16px;
-    top: 60%;
+    top: 65%;
     left: 50%;
 }
 
 .crater6 {
     width: 14px;
     height: 14px;
-    top: 10%;
-    left: 70%;
+    top: 46%;
+    left: 41%;
 }
 
 .crater7 {
     width: 13px;
     height: 13px;
-    top: 80%;
-    left: 30%;
+    top: 62%;
+    left: 46%;
 }
 
 .crater8 {
     width: 11px;
     height: 11px;
-    top: 30%;
-    left: 40%;
+    top: 33%;
+    left: 48%;
 }
 
 .crater9 {
     width: 20px;
     height: 20px;
-    top: 80%;
-    left: 70%;
+    top: 58%;
+    left: 57%;
 }
 
 .rocket1 {
-    position: absolute;
+    position: fixed;
     bottom: 60%;
     left: 70%;
     transform: translateX(-50%);
@@ -105,7 +127,7 @@
     height: 20px;
     background-color: #a0dcff;
     border-radius: 50%;
-    position: absolute;
+    position: fixed;
     top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -116,7 +138,7 @@
     height: 50px;
     background-color: #FFA500;
     border-radius: 50%;
-    position: absolute;
+    position: fixed;
     bottom: -20px;
     left: 50%;
     transform: translateX(-50%);
@@ -124,7 +146,7 @@
 }
 
 .rocket2 {
-    position: absolute;
+    position: fixed;
     bottom: 20%;
     left: 30%;
     transform: translateX(-50%);
@@ -144,7 +166,7 @@
     height: 20px;
     background-color: #a0dcff;
     border-radius: 50%;
-    position: absolute;
+    position: fixed;
     top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -155,7 +177,7 @@
     height: 50px;
     background-color: #FFA500;
     border-radius: 50%;
-    position: absolute;
+    position: fixed;
     bottom: -20px;
     left: 50%;
     transform: translateX(-50%);
