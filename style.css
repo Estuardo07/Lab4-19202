@@ -84,7 +84,7 @@
     left: 70%;
 }
 
-.rocket {
+.rocket1 {
     position: absolute;
     bottom: 60%;
     left: 70%;
@@ -92,7 +92,7 @@
     rotate: -45deg;
 }
 
-.rocket-body {
+.rocket-body1 {
     width: 50px;
     height: 100px;
     background-color: #ff6666;
@@ -100,7 +100,7 @@
     position: relative;
 }
 
-.rocket-window {
+.rocket-window1 {
     width: 20px;
     height: 20px;
     background-color: #a0dcff;
@@ -111,7 +111,46 @@
     transform: translate(-50%, -50%);
 }
 
-.rocket-fire {
+.rocket-fire1 {
+    width: 20px;
+    height: 50px;
+    background-color: #FFA500;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: flicker 0.5s infinite alternate;
+}
+
+.rocket2 {
+    position: absolute;
+    bottom: 20%;
+    left: 30%;
+    transform: translateX(-50%);
+    rotate: 135deg;
+}
+
+.rocket-body2 {
+    width: 50px;
+    height: 100px;
+    background-color: #2b91ff;
+    border-radius: 10px;
+    position: relative;
+}
+
+.rocket-window2 {
+    width: 20px;
+    height: 20px;
+    background-color: #a0dcff;
+    border-radius: 50%;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.rocket-fire2 {
     width: 20px;
     height: 50px;
     background-color: #FFA500;
