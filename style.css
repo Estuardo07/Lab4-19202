@@ -1,118 +1,129 @@
-.face {
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 50px;
-    height: 50px;
+.background {
+    background-color: #0A1931;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.moon {
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
-    background-color: #F7DC6F;
+    background-color: #CCCCCC;
+    position: relative;
     overflow: hidden;
 }
 
-.eyes {
+.crater {
     position: absolute;
-    top: 40%;
-    width: 50%;
-    height: 25%;
-    background-color: #000;
+    background-color: #999999;
     border-radius: 50%;
 }
 
-.eyes.left {
+.crater1 {
+    width: 15px;
+    height: 15px;
+    top: 20%;
+    left: 30%;
+}
+
+.crater2 {
+    width: 12px;
+    height: 12px;
+    top: 50%;
+    left: 60%;
+}
+
+.crater3 {
+    width: 10px;
+    height: 10px;
+    top: 70%;
     left: 20%;
 }
 
-.eyes.right {
-    right: 20%;
+.crater4 {
+    width: 18px;
+    height: 18px;
+    top: 40%;
+    left: 80%;
 }
 
-.mouth {
-    position: absolute;
+.crater5 {
+    width: 16px;
+    height: 16px;
     top: 60%;
     left: 50%;
-    width: 50%;
-    height: 25%;
-    background-color: transparent;
-    border-bottom: 2px solid #000;
-    border-radius: 50%;
 }
 
-.cap {
-    position: absolute;
-    top: -20px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100px;
-    height: 40px;
-    background-color: #FFD34E;
-    color: #000;
-    text-align: center;
-    line-height: 40px;
-    font-weight: bold;
-    font-size: 24px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-}
-
-.burger {
-    width: 200px;
-    height: 150px;
-    background-color: #F8C24B;
-    position: relative;
-    border-radius: 5px;
-    overflow: hidden;
-}
-
-.bun-top,
-.bun-bottom {
-    width: 100%;
-    height: 50%;
-    background-color: #FFD34E;
-}
-
-.seeds {
-    width: 100%;
-    height: 100%;
-    position: relative;
-}
-
-.seeds::before {
-    content: '';
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    background-color: #A3662A;
-    border-radius: 50%;
-    top: 20%;
-    left: 10%;
-}
-
-.seeds::after {
-    content: '';
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    background-color: #A3662A;
-    border-radius: 50%;
-    top: 20%;
+.crater6 {
+    width: 14px;
+    height: 14px;
+    top: 10%;
     left: 70%;
 }
 
-.lettuce {
-    width: 100%;
-    height: 25%;
-    background-color: #72B40D;
+.crater7 {
+    width: 13px;
+    height: 13px;
+    top: 80%;
+    left: 30%;
 }
 
-.patty {
-    width: 100%;
-    height: 25%;
-    background-color: #703B18;
+.crater8 {
+    width: 11px;
+    height: 11px;
+    top: 30%;
+    left: 40%;
 }
 
-.cheese {
-    width: 100%;
-    height: 25%;
-    background-color: #FFC72C;
+.crater9 {
+    width: 20px;
+    height: 20px;
+    top: 80%;
+    left: 70%;
+}
+
+.rocket {
+    position: absolute;
+    bottom: 60%;
+    left: 70%;
+    transform: translateX(-50%);
+    rotate: -45deg;
+}
+
+.rocket-body {
+    width: 50px;
+    height: 100px;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    position: relative;
+}
+
+.rocket-window {
+    width: 20px;
+    height: 20px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.rocket-fire {
+    width: 20px;
+    height: 50px;
+    background-color: #FFA500;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: flicker 0.5s infinite alternate;
+}
+
+@keyframes flicker {
+    0% { opacity: 1; }
+    100% { opacity: 0.5; }
 }
