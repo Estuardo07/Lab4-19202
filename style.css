@@ -95,7 +95,7 @@
 .rocket-body {
     width: 50px;
     height: 100px;
-    background-color: #e0e0e0;
+    background-color: #ff6666;
     border-radius: 10px;
     position: relative;
 }
@@ -103,7 +103,7 @@
 .rocket-window {
     width: 20px;
     height: 20px;
-    background-color: #FFFFFF;
+    background-color: #a0dcff;
     border-radius: 50%;
     position: absolute;
     top: 30%;
