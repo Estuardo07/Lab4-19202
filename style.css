@@ -1,3 +1,60 @@
+.face {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #F7DC6F;
+    overflow: hidden;
+}
+
+.eyes {
+    position: absolute;
+    top: 40%;
+    width: 50%;
+    height: 25%;
+    background-color: #000;
+    border-radius: 50%;
+}
+
+.eyes.left {
+    left: 20%;
+}
+
+.eyes.right {
+    right: 20%;
+}
+
+.mouth {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    width: 50%;
+    height: 25%;
+    background-color: transparent;
+    border-bottom: 2px solid #000;
+    border-radius: 50%;
+}
+
+.cap {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 40px;
+    background-color: #FFD34E;
+    color: #000;
+    text-align: center;
+    line-height: 40px;
+    font-weight: bold;
+    font-size: 24px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
 .burger {
     width: 200px;
     height: 150px;
